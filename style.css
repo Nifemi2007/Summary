@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  background-image: linear-gradient(
+      hsla(224, 70%, 84%, 0),
+      hsla(223, 70%, 82%, 0.6)
+    ),
+    url(./img/pattern-background-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: grid;
+  place-items: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media only screen and (min-width: 376px) and(max-width: 1440px) {
+  body {
+    display: grid;
+    place-items: center;
+    background-image: url(./img/pattern-background-desktop.svg);
+  }
+}
+
+.container {
+  height: 85%;
+  width: 90%;
+  background-color: white;
+  border-radius: 18px;
+}
+
+@media only screen and (min-width: 376px) and (max-width: 1440px) {
+  .container {
+    width: 28%;
+    height: 85%;
+  }
+}
+
+.img {
+  height: 30%;
+  background-image: url(./img/illustration-hero.svg);
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+  background-size: cover;
+  background-position: 0px;
+  background-repeat: no-repeat;
+}
+
+.content {
+  height: 70%;
+  width: 80%;
+  margin: auto;
+  padding-top: 25px;
+  text-align: center;
+}
+
+.content > h2 {
+  color: hsl(223, 47%, 23%);
+}
+
+.content > p {
+  padding-top: 15px;
+  line-height: 25px;
+  font-size: 16px;
+  color: hsl(224, 23%, 55%);
+  font-weight: 500;
+}
+
+.content-text {
+  background-color: hsla(225, 100%, 94%, 0.2);
+  margin-top: 25px;
+  border-radius: 8px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.text h2 {
+  font-size: 15px;
+  color: hsl(223, 47%, 23%);
+}
+.text p {
+  width: 50%;
+  font-size: 16px;
+  color: hsl(224, 23%, 55%);
+}
+.anchor a {
+  color: hsl(245, 75%, 52%);
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.anchor a:hover {
+  text-decoration: none;
+  color: hsl(224, 85%, 68%);
+}
+
+.btn {
+  margin-top: 25px;
+}
+
+button {
+  border-radius: 8px;
+  border: none;
+  background-color: hsl(245, 75%, 52%);
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.btn1 {
+  box-shadow: 5px 18px 10px hsla(227, 5%, 67%, 0.4);
+  padding: 15px;
+  width: 100%;
+}
+
+.btn1:hover {
+  cursor: pointer;
+  background-color: hsl(224, 85%, 68%);
+}
+
+.btn > button + button {
+  background-color: transparent;
+  margin-top: 25px;
+  color: hsl(224, 28%, 46%);
+}
+
+.btn > button + button:hover {
+  color: hsl(223, 47%, 23%);
+  cursor: pointer;
+}
