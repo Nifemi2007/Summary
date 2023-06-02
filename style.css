@@ -48,7 +48,7 @@ body {
   }
 }
 
-@media only screen and (min-width: 851px) and (max-width: 1440px) {
+@media only screen and (min-width: 851px) and (max-width: 1000px) {
   .container {
     width: 40%;
     height: 85%;
