@@ -5,6 +5,7 @@
 
 body {
   height: 100vh;
+  overflow: hidden;
   background-image: linear-gradient(
       hsla(224, 70%, 84%, 0),
       hsla(223, 70%, 82%, 0.6)
@@ -12,7 +13,6 @@ body {
     url(./img/pattern-background-mobile.svg);
   background-repeat: no-repeat;
   background-size: cover;
-
   display: grid;
   place-items: center;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -27,10 +27,11 @@ body {
 }
 
 .container {
-  height: 85%;
-  width: 90%;
+  height: 80%;
+  width: 30%;
   background-color: white;
   border-radius: 18px;
+  position: relative;
   overflow-y: scroll;
 }
 
@@ -55,12 +56,12 @@ body {
   }
 }
 
-@media only screen and (max-width: 1440px) {
+/* @media only screen and (max-width: 1440px) {
   .container {
     width: 30%;
     height: 85%;
   }
-}
+} */
 
 ::-webkit-scrollbar {
   display: none;
